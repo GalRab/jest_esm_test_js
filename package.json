@@ -1,0 +1,28 @@
+{
+    "name": "jesttest",
+    "version": "1.0.0",
+    "description": "k8s integration service",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "node --experimental-vm-modules  ./node_modules/.bin/jest --runInBand --bail --colors --coverage --detectOpenHandles --forceExit --verbose",
+        "lint": "prettier --write ."
+    },
+    "author": "Gal",
+    "license": "UNLICENSED",
+    "engines": {
+        "node": "^17"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "jest": "^27.5.1"
+    },
+    "jest": {
+        "globals": {
+            "ts-jest": {
+                "useESM": true
+            }
+        }
+    }
+}
